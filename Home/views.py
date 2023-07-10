@@ -25,7 +25,7 @@ def contact(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         desc = request.POST.get('desc')
-        contact = Contact(name=name, email=email, phone=phone,password=password,desc=desc,date=datetime.today())
+        contact = Contact(name=name, email=email, phone=phone,password=password,desc=desc,date=datetime.now()) # datetime.now intead of datetime.today
         contact.save()
         messages.success(request, 'Your form has been submitted. Thankyou for trusting us!')
 
