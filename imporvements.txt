@@ -1,4 +1,0 @@
-1) Redundant code in templates (Base.html).
-2) No required field in html form.
-3) Request handling in contact.POST (no handling for duplicate data).
-4) Flaws in models.pyy
